@@ -5,22 +5,22 @@ package domain;
  */
 public class Editor extends Artist {
     /**
-     * конструктор класу {@link Editor}
-     * @param electronicEditing
-     * @param skiils
-     * @param name
-     * @param jobTitle
-     * @param level
-     * @param dept 
+     * конструктор класу {@link Editor} при створенні об'єкту наступні параметри вказуються за замовчуванням:
+     * {@link electronicEditing},
+     * {@link skiils},
+     * {@link name},
+     * {@link jobTitle},
+     * {@link level},
+     * {@link dept};
      */
     public Editor(boolean electronicEditing, String[] skiils, String name, String jobTitle, int level, String dept) {
         super(skiils, name, jobTitle, level, dept);
         this.electronicEditing = electronicEditing;
     }
     /**
-     * 
-     * @param electronicEditing
-     * @param skiils 
+     * конструктор класу {@link Editor}, який встановлює наступні параметри:
+     * {@link electronicEditing},
+     * {@link skiils}; 
      */
     public Editor(boolean electronicEditing, String[] skiils) {
         super(skiils);
@@ -35,14 +35,15 @@ public class Editor extends Artist {
         this.electronicEditing = electronicEditing;
     }
     /**
-     * 
+     * конструктор класу {@link Editor}
+     * {@link electronicEditing} - true, за замовчуванням
      */
     public Editor() {
         super();
         this.electronicEditing = true;
     }
     /**
-     * 
+     * @see Employee
      * @return 
      */
     @Override

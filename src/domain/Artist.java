@@ -1,7 +1,7 @@
 package domain;
 /**
  * 
- * Java-пакет, що описує працівників компанії {@link Artist, 
+ * Java-пакет, що описує працівників компанії {@link Artist}, 
  * є підкласом {@link Employee}
  * 
  */
